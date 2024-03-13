@@ -1,0 +1,20 @@
+http://localhost:6000/api/v1/users/new    register -post
+http://localhost:6000/api/v1/users/login   login -post
+http://localhost:6000/api/v1/users/logout   logout -get
+http://localhost:6000/api/v1/attendence/admin/all  get all attendence -get --admin
+http://localhost:6000/api/v1/users/admin/all   --admin -get get all users
+http://localhost:6000/api/v1/users/me -get -get my profile
+
+http://localhost:6000/api/v1/attendence/new  mark attendence -post
+http://localhost:6000/api/v1/attendence/me  get my attendence -get
+http://localhost:6000/api/v1/attendence/admin/:id  get single user attendence -get --admin
+http://localhost:6000/api/v1/attendence/admin/:id  update user attendence -put --admin
+http://localhost:6000/api/v1/attendence/admin/:id  delete user attendence -delete --admin
+
+http://localhost:6000/api/v1/leave/new   create leave -post
+http://localhost:6000/api/v1/leave/me   get my leaves -get
+http://localhost:6000/api/v1/leave/admin/all   get all leaves -get --admin
+http://localhost:6000/api/v1/leave/admin/all   --admin get all leaves
+http://localhost:6000/api/v1/leave/admin/:id   get all single user leaves -get --admin
+http://localhost:6000/api/v1/leave/admin/approve/:id   approve leaves -put --admin
+http://localhost:6000/api/v1/leave/admin/:id   delete leave -delete --admin
